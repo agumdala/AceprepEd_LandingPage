@@ -53,7 +53,7 @@ function ChoiceScreen({ onSelect }) {
 
 /* ---- App ---- */
 function App() {
-  const [t, setTweak] = useTweaks(LANDING_DEFAULTS);
+  /*const [t, setTweak] = useTweaks(LANDING_DEFAULTS);*/
   const [view, setView] = useAppState('choice');
   const [phase, setPhase] = useAppState('active'); // 'active' | 'exit' | 'enter'
 
@@ -110,21 +110,6 @@ function App() {
       view === 'educator' && React.createElement(EducatorPage, { layout: heroLayout, noAnim }),
       view === 'student' && React.createElement(StudentPage, { layout: heroLayout, noAnim })
     ),
-    React.createElement(TweaksPanel, null,
-      React.createElement(TweakSection, { label: 'Layout' }),
-      React.createElement(TweakRadio, {
-        label: 'Hero Layout',
-        value: t.heroLayout,
-        options: ['split', 'centered'],
-        onChange: (v) => setTweak('heroLayout', v)
-      }),
-      React.createElement(TweakSection, { label: 'Effects' }),
-      React.createElement(TweakToggle, {
-        label: 'Animations',
-        value: t.animations,
-        onChange: (v) => setTweak('animations', v)
-      })
-    )
   );
 }
 
