@@ -57,8 +57,11 @@ function App() {
   const [view, setView] = useAppState('choice');
   const [phase, setPhase] = useAppState('active'); // 'active' | 'exit' | 'enter'
 
-  const noAnim = !t.animations;
-  const heroLayout = t.heroLayout;
+  /*const noAnim = !t.animations;*/
+  /*const heroLayout = t.heroLayout;*/
+
+  const noAnim = false; // or whatever default you want
+  const heroLayout = 'default';
 
   const transitionTo = useAppCallback((target) => {
     setPhase('exit');
