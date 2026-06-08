@@ -1,0 +1,69 @@
+/* ============================================================
+   AcePrep — Color Tokens
+   Brand palette: Ink navy (#1E293B), Steel teal (#4C8EAE), White.
+   Minimalist by design — color is used sparingly. The signature
+   look is white surfaces framed by a dark (near-black) outline.
+   ============================================================ */
+
+:root {
+  /* ---- Brand core ---- */
+  --color-ink: #1E293B;          /* primary brand navy — nav bars, dark cards, headings */
+  --color-ink-strong: #0F172A;   /* deepest slate — display headings, outlines */
+  --color-steel: #4C8EAE;        /* accent steel-teal — CTAs, send arrows, carousel nav */
+  --color-white: #FFFFFF;
+
+  /* ---- Steel teal scale (accent) ---- */
+  --color-steel-700: #3A6E89;    /* hover / pressed accent */
+  --color-steel-500: #4C8EAE;    /* base accent */
+  --color-steel-300: #9DC2D4;    /* tints, focus rings */
+  --color-steel-100: #DCE9F1;    /* chat bubbles, soft fills */
+  --color-steel-50:  #EFF5F9;    /* faint accent wash */
+
+  /* ---- Ink / neutral scale ---- */
+  --color-ink-900: #0F172A;
+  --color-ink-800: #1E293B;      /* brand navy */
+  --color-ink-700: #334155;
+  --color-ink-600: #475569;
+  --color-ink-500: #64748B;      /* secondary text */
+  --color-ink-400: #94A3B8;      /* muted text, placeholders */
+  --color-ink-300: #CBD5E1;
+  --color-ink-200: #E5E7EB;      /* hairline borders */
+  --color-ink-100: #F1F5F9;
+  --color-ink-50:  #F5F5F7;      /* app page background */
+
+  /* ---- Surfaces & backgrounds ---- */
+  --surface-page: #F5F5F7;       /* default app background */
+  --surface-card: #FFFFFF;       /* the white framed box */
+  --surface-card-tint: #FCFCFF;  /* near-white panel (calendar) */
+  --surface-dark: #1E293B;       /* navy header cards / nav */
+  --surface-overlay: #F3F4F6;    /* carousel / stage behind cards */
+
+  /* ---- Outline (the signature dark frame) ---- */
+  --outline-strong: #1E293B;     /* the black/navy box outline */
+  --outline-hairline: #E5E7EB;   /* subtle dividers */
+  --outline-dashed: #CBD5E1;     /* dashed "add" affordances */
+
+  /* ---- Text ---- */
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+  --text-on-dark: #FFFFFF;
+  --text-on-accent: #FFFFFF;
+  --text-link: #4C8EAE;
+
+  /* ---- Event / category colors (Syllabus Calendar) ---- */
+  --event-exam: #EF4444;         /* exams — red */
+  --event-quiz: #3B82F6;         /* quizzes — blue */
+  --event-study: #10B981;        /* study sessions — green */
+  --event-personal: #8B5CF6;     /* personal / custom — purple */
+  --event-synced: #9CA3AF;       /* synced Google events — muted gray */
+
+  /* ---- Semantic status ---- */
+  --status-success: #10B981;
+  --status-warning: #F59E0B;
+  --status-danger: #EF4444;
+  --status-info: #4C8EAE;
+
+  /* ---- Focus ---- */
+  --focus-ring: rgba(76, 142, 174, 0.45);
+}

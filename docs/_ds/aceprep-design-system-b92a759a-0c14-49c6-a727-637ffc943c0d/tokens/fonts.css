@@ -1,0 +1,15 @@
+/* ============================================================
+   AcePrep — Font faces
+   Primary typeface: GEIST (matches the production app, which loads
+   Geist via @import in PlanCalendar.css). Geist Mono for any
+   numeric / monospace use.
+
+   NOTE FOR MAINTAINERS: We load Geist from Google Fonts rather than
+   self-hosting binaries (the build sandbox can't download the woff2
+   files). If you need fully offline/self-hosted fonts, drop the
+   .woff2 files into assets/fonts/ and replace the @import below with
+   local @font-face rules. The Figma mockups used a rounded
+   placeholder face; production is Geist.
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap");

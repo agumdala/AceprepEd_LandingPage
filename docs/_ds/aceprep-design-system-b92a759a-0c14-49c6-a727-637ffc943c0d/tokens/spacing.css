@@ -1,0 +1,35 @@
+/* ============================================================
+   AcePrep — Spacing Tokens
+   8px base rhythm. Layouts are generous and uncluttered to keep
+   the frictionless, minimalist feel.
+   ============================================================ */
+
+:root {
+  --space-0: 0;
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px  — base unit */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px — common card padding */
+  --space-8: 2rem;      /* 32px — gap between major blocks */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px — section rhythm */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+
+  /* ---- Semantic spacing ---- */
+  --pad-card: var(--space-6);          /* inner padding of white framed boxes */
+  --pad-card-lg: var(--space-8);
+  --pad-button-y: 0.7rem;
+  --pad-button-x: 1.4rem;
+  --gap-stack: var(--space-4);         /* vertical stack rhythm */
+  --gap-grid: var(--space-6);          /* card grid gap */
+  --gap-inline: var(--space-3);        /* inline chip / icon gap */
+
+  /* ---- Layout ---- */
+  --container-max: 70rem;     /* 1120px content max-width */
+  --container-wide: 90rem;    /* 1440px wide app shell */
+  --nav-height: 5rem;         /* 80px navy nav bar */
+}
