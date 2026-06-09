@@ -61,7 +61,7 @@ function App() {
   /*const heroLayout = t.heroLayout;*/
 
   const noAnim = false; // or whatever default you want
-  const heroLayout = 'default';
+  const heroLayout = 'split';
 
   const transitionTo = useAppCallback((target) => {
     setPhase('exit');
