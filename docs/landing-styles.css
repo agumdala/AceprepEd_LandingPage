@@ -439,7 +439,7 @@ body { overflow-x: hidden; }
 .lp-back:hover { color: var(--text-primary); }
 
 /* ---- Responsive ---- */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .lp-features--4 { grid-template-columns: repeat(2, 1fr); }
   .lp-metrics { grid-template-columns: repeat(2, 1fr); }
   .lp-hero--split .lp-hero__inner {
