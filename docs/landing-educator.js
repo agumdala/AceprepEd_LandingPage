@@ -145,16 +145,16 @@ function EducatorCredibility({ noAnim }) {
 
 function EducatorTestimonials({ noAnim }) {
   const testimonials = [
-    { initials: 'JD', name: 'Name', role: 'Teacher · Institution', quote: 'Testimonial placeholder — real quote coming soon.' },
-    { initials: 'AR', name: 'Name', role: 'Academic Advisor · Institution', quote: 'Testimonial placeholder — real quote coming soon.' },
-    { initials: 'KP', name: 'Name', role: 'Department Head · Institution', quote: 'Testimonial placeholder — real quote coming soon.' },
+    { initials: 'CM', name: 'Cameron', role: 'Student · Rochester Tech', quote: 'The practice test feature is actually insane' },
+    { initials: 'EN', name: 'Ebube', role: 'Student · LMU', quote: 'I used it to track all my exams during finals' },
+    { initials: 'PG', name: 'Pranav', role: 'Student · UCI', quote: 'The google calendar integration is a lifesaver' },
   ];
   return React.createElement(Section, { id: 'edu-testimonials', white: true },
     React.createElement(AnimReveal, { noAnim },
       React.createElement('p', { className: 'lp-section__eyebrow', style: { textAlign: 'center' } }, 'Testimonials')
     ),
     React.createElement(AnimReveal, { noAnim, delay: 1 },
-      React.createElement('h2', { className: 'lp-section__heading lp-section__heading--center' }, 'What Educators Are Saying')
+      React.createElement('h2', { className: 'lp-section__heading lp-section__heading--center' }, 'What Students Are Saying')
     ),
     React.createElement(TestimonialCarousel, { testimonials, noAnim })
   );
