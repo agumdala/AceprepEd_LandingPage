@@ -1,4 +1,6 @@
 /* AcePrep Landing — Main App (Choice Screen + Routing + Tweaks) */
+console.log('commit: Add margins between text and border');
+
 const { useState: useAppState, useEffect: useAppEffect, useCallback: useAppCallback } = React;
 const { Button: DSButton } = window.AcePrepDesignSystem_b92a75;
 
@@ -155,7 +157,7 @@ function NewsletterModal({ onClose, onContinue }) {
                   className: `lp-form__input${error ? ' is-error' : ''}`,
                   type: 'email',
                   value: email,
-                  placeholder: 'you@school.edu',
+                  placeholder: 'you@gmail.com',
                   'aria-label': 'Email address',
                   disabled: submitting,
                   onChange: (e) => { setEmail(e.target.value); if (error) setError(''); }
