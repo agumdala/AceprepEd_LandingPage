@@ -329,12 +329,12 @@ body { overflow-x: hidden; }
   animation: lp-modal-fade 0.2s ease;
 }
 .lp-modal__card {
-  position: relative; width: 100%; max-width: 460px;
+  position: relative; width: 100%; max-width: 560px;
   max-height: calc(100vh - var(--space-12)); overflow-y: auto;
   background: var(--surface-card);
   border: var(--border-frame) solid var(--outline-strong);
   border-radius: var(--radius-xl);
-  padding: var(--space-9) var(--space-8) var(--space-8);
+  padding: var(--space-10) var(--space-10) var(--space-9);
   box-shadow: var(--shadow-card, 0 24px 60px rgba(15, 23, 42, 0.22));
   animation: lp-modal-rise 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
